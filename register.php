@@ -4,7 +4,7 @@ $msg = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // mã hoá mật khẩu
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); 
 
     $check = $conn->query("SELECT * FROM users WHERE username = '$username'");
     if ($check->num_rows > 0) {
@@ -21,6 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <title>Đăng ký</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body style="padding:30px">
 <div class="container">

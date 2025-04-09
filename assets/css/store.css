@@ -1,0 +1,144 @@
+.container-main {
+    margin-left: 250px;
+    padding: 30px;
+    width: calc(100% - 270px);
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-md-3 {
+    flex: 1;
+    padding: 0 10px;
+    min-width: 0;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.stat-card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.stat-card-icon i {
+    font-size: 24px;
+}
+
+.bg-success .stat-card-icon { 
+    background: #e7f7ed;
+    color: #28a745;
+}
+.bg-info .stat-card-icon { 
+    background: #e7f1ff;
+    color: #007bff;
+}
+.bg-warning .stat-card-icon { 
+    background: #fff3cd;
+    color: #ffc107;
+}
+.bg-danger .stat-card-icon { 
+    background: #f8d7da;
+    color: #dc3545;
+}
+
+.stat-card-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat-card-title {
+    font-size: 13px;
+    color: #666;
+    margin: 0 0 8px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.stat-card-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stat-card-desc {
+    font-size: 12px;
+    color: #999;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.panel-heading {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f5;
+}
+
+.panel-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.label {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .col-md-3 {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 100%;
+    }
+}
