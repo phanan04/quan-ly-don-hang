@@ -1,0 +1,50 @@
+/* reset.css */
+
+/* Xóa margin, padding mặc định và set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Xóa style mặc định cho danh sách */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Xóa đường viền và background khi bấm vào form */
+  button, input, textarea {
+    border: none;
+    background: none;
+    outline: none;
+    font: inherit;
+  }
+  
+  /* Set font và màu chữ mặc định */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  /* Xóa gạch chân của thẻ a */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Set hình ảnh hiển thị đúng tỉ lệ */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Table style */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
